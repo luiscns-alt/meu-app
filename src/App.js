@@ -5,11 +5,7 @@ function App() {
   const nome = 'Luis Carlos';
   return (
     <div>
-      <Contador a={nome}>
-        <div>
-          div
-        </div>
-      </Contador>
+      <Contador a={nome} />
     </div>
   );
 }
