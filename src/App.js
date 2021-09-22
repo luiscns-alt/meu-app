@@ -2,9 +2,14 @@ import './App.css';
 import Contador from './components/MeuComponente/Contador.js'
 
 function App() {
+  const nome = 'Luis Carlos';
   return (
     <div>
-      <Contador />
+      <Contador a={nome}>
+        <div>
+          div
+        </div>
+      </Contador>
     </div>
   );
 }

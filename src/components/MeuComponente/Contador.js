@@ -1,10 +1,14 @@
 import myStyles from './Contador.module.css';
 
-function Contador() {
+function Contador(props) {
     const numero = 5;
     return (
         <div className={myStyles['meu-contador']}>
-            Contador: {numero}
+            Contador: {numero} - {props.a}
+            <div>
+                espaço
+            </div>
+            {props.children}
         </div>
     )
 }
