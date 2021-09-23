@@ -1,11 +1,12 @@
-import './App.css';
-import Contador from './components/MeuComponente/Contador.js'
+import "./App.css";
+import Contador from "./components/MeuComponente/Contador.js";
+import ListaCursos from "./components/ListaCursos/ListaCursos";
 
 function App() {
-  const nome = 'Luis Carlos';
+  const nome = "Luis Carlos";
   return (
     <div>
-      <Contador a={nome} />
+      <ListaCursos />
     </div>
   );
 }
