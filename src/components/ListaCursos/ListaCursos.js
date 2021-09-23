@@ -16,7 +16,7 @@ function ListaCursos() {
       <button onClick={buscarCursos}>Procurar Cursos</button>
       <ul>
         {cursos.map(item => {
-            return <li key={item.id}>{item.nome}</li>
+            return (<li key={item.id}>{item.nome}</li>)
         })}
       </ul>
     </div>
