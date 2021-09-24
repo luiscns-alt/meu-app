@@ -3,6 +3,7 @@ import useOnlineStatus from "./data/hooks/useOnlineStatus";
 import { Button } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./ui/themes/theme";
+import Contador from "./components/MeuComponente/Contador";
 
 function App() {
   const isOnline = useOnlineStatus();
@@ -17,11 +18,9 @@ function App() {
     <div>
       <ThemeProvider theme={theme}>
         <div>
-          {isOnline ? "Você esta Online" : "Você esta desconectado"}
-          <Button variant={"contained"}>click</Button>
+         <Contador />
         </div>
       </ThemeProvider>
-      <Button variant={"contained"}>click</Button>
     </div>
   );
 }
